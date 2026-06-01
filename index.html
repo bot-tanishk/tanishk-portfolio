@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tanishk is a freelance video editor crafting retention-first documentaries, shorts, reels, podcast clips, gaming edits, and YouTube content."
+    />
+    <meta name="theme-color" content="#080808" />
+    <meta property="og:title" content="Tanishk — Video Editor & Storyteller" />
+    <meta
+      property="og:description"
+      content="Turning footage into stories people refuse to scroll past."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-studio.png" />
+    <title>Tanishk — Video Editor & Storyteller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="preloader" aria-live="polite">
+      <div class="preloader__top">
+        <span>TANISHK / POST-PRODUCTION</span>
+        <span>EST. 2024</span>
+      </div>
+      <div class="preloader__center">
+        <p class="preloader__eyebrow">EDITORIAL SYSTEM BOOT</p>
+        <h2 class="preloader__message">INITIALIZING STORY...</h2>
+        <div class="preloader__track"><span class="preloader__bar"></span></div>
+        <div class="preloader__status">
+          <span>FRAME <b class="preloader__frame">0001</b></span>
+          <span class="preloader__percent">00%</span>
+        </div>
+      </div>
+      <p class="preloader__bottom">PLEASE STAY FOR THE OPENING SHOT</p>
+    </div>
+
+    <div class="page-transition" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <canvas id="atmosphere" aria-hidden="true"></canvas>
+
+    <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" aria-label="Back to top">
+        <span class="brand__mark">T</span>
+        <span class="brand__text">TANISHK<br /><em>EDITOR / STORYTELLER</em></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#work">WORK</a>
+        <a href="#process">PROCESS</a>
+        <a href="#contact" class="site-nav__cta magnetic">START A PROJECT <span>↗</span></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="side-index" aria-hidden="true">
+      <span>01</span>
+      <i></i>
+      <span class="side-index__active">OPENING TITLE</span>
+    </aside>
+
+    <main>
+      <section class="hero" id="top" data-scene="OPENING TITLE">
+        <div class="hero__media parallax-media">
+          <img src="assets/hero-studio.png" alt="" fetchpriority="high" />
+        </div>
+        <div class="hero__shade"></div>
+        <div class="hero__flare"></div>
+        <div class="hero__content">
+          <p class="micro-copy hero__intro reveal-up">FREELANCE VIDEO EDITOR <span>/</span> INDIA</p>
+          <div class="hero__title-wrap" aria-label="Tanishk">
+            <h1 class="hero__title">
+              <span>T</span><span>A</span><span>N</span><span>I</span><span>S</span><span>H</span><span>K</span>
+            </h1>
+            <p class="hero__title-ghost" aria-hidden="true">TANISHK</p>
+          </div>
+          <div class="hero__lower">
+            <p class="hero__subtitle reveal-up">TURNING FOOTAGE<br /><em>INTO STORIES.</em></p>
+            <div class="hero__meta reveal-up">
+              <span>SHORTS / REELS / YOUTUBE</span>
+              <span>DOCUMENTARIES / SOCIAL</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__corner hero__corner--left">
+          <span>TC 00:00:01:00</span>
+          <span>REC ●</span>
+        </div>
+        <div class="hero__corner hero__corner--right">
+          <span>4K / 24 FPS</span>
+          <span>SCROLL TO ENTER</span>
+        </div>
+        <a class="scroll-cue" href="#showreel" aria-label="Scroll to showreel">
+          <span>SCROLL</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="manifesto section-shell" data-scene="THE PHILOSOPHY">
+        <p class="section-kicker reveal-up">00 — THE PHILOSOPHY</p>
+        <div class="manifesto__copy">
+          <h2 class="display-copy split-reveal">
+            ANYONE CAN CUT.<br />
+            <span>FEW CAN MAKE YOU</span><br />
+            <em>FEEL SOMETHING.</em>
+          </h2>
+          <p class="manifesto__note reveal-up">
+            The right pause. The right beat. The frame you remember five minutes later.
+            Every edit is built to hold attention and leave a mark.
+          </p>
+        </div>
+      </section>
+
+      <section class="showreel section-shell" id="showreel" data-scene="FEATURED CUT">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker reveal-up">01 — FEATURED CUT / 2026</p>
+            <h2 class="section-title split-reveal">THE SHOWREEL</h2>
+          </div>
+          <p class="section-aside reveal-up">SELECTED MOMENTS<br />ONE MINUTE / FULL VOLUME</p>
+        </div>
+
+        <article class="featured-reel interactive-media" data-cursor="PLAY">
+          <div class="featured-reel__media">
+            <video
+              class="hover-video"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/hero-studio.png"
+            >
+              <source
+                src="https://videos.pexels.com/video-files/3051491/3051491-hd_1920_1080_25fps.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <img src="assets/hero-studio.png" alt="A focused editor in a dark post-production studio" />
+          </div>
+          <div class="featured-reel__wash"></div>
+          <div class="featured-reel__top">
+            <span>TANISHK / SELECTED WORK</span>
+            <span>2024 — 2026</span>
+          </div>
+          <div class="featured-reel__center">
+            <button class="play-button magnetic" aria-label="Play showreel"><span>▶</span></button>
+          </div>
+          <div class="featured-reel__bottom">
+            <div>
+              <p class="featured-reel__label">SHOWREEL 001</p>
+              <h3>STORIES IN MOTION</h3>
+            </div>
+            <div class="featured-reel__meta">
+              <span>01:04</span>
+              <span>PLAY PREVIEW</span>
+            </div>
+          </div>
+          <div class="featured-reel__progress"><i></i></div>
+        </article>
+      </section>
+
+      <section class="portfolio section-shell" id="work" data-scene="SELECTED WORKS">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker reveal-up">02 — SELECTED WORKS</p>
+            <h2 class="section-title split-reveal">THE CUTS<br /><em>THAT STAY.</em></h2>
+          </div>
+          <p class="section-aside reveal-up">HOVER TO ROLL FOOTAGE<br />MOVE TO FEEL THE FRAME</p>
+        </div>
+
+        <div class="work-list">
+          <article class="project-card project-card--wide interactive-media tilt-card" data-cursor="WATCH">
+            <div class="project-card__media">
+              <img src="assets/documentary.png" alt="Documentary portrait of an artisan by a window" loading="lazy" />
+              <video class="hover-video" muted loop playsinline preload="none" poster="assets/documentary.png">
+                <source
+                  src="https://videos.pexels.com/video-files/4063585/4063585-hd_1920_1080_30fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__index">01</div>
+            <div class="project-card__body">
+              <p>LONGFORM / HUMAN STORIES</p>
+              <h3>DOCUMENTARY<br />VIDEOS</h3>
+              <span>EMOTION, PACING, NARRATIVE <b>↗</b></span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--tall interactive-media tilt-card" data-cursor="WATCH">
+            <div class="project-card__media">
+              <img src="assets/reels.png" alt="Fashionable silhouette crossing a wet city street" loading="lazy" />
+              <video class="hover-video" muted loop playsinline preload="none" poster="assets/reels.png">
+                <source
+                  src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__index">02</div>
+            <div class="project-card__body">
+              <p>VERTICAL / RETENTION-FIRST</p>
+              <h3>SHORTS<br />& REELS</h3>
+              <span>HOOKS, MOMENTUM, REWATCHES <b>↗</b></span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--tall interactive-media tilt-card" data-cursor="WATCH">
+            <div class="project-card__media">
+              <img src="assets/podcast.png" alt="Podcast host speaking into a studio microphone" loading="lazy" />
+              <video class="hover-video" muted loop playsinline preload="none" poster="assets/podcast.png">
+                <source
+                  src="https://videos.pexels.com/video-files/4125025/4125025-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__index">03</div>
+            <div class="project-card__body">
+              <p>CONVERSATIONS / SOCIAL CLIPS</p>
+              <h3>PODCAST<br />CLIPS</h3>
+              <span>CLARITY, CAPTIONS, IMPACT <b>↗</b></span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide interactive-media tilt-card" data-cursor="WATCH">
+            <div class="project-card__media">
+              <img src="assets/gaming.png" alt="Gaming creator setup with a dramatic monitor glow" loading="lazy" />
+              <video class="hover-video" muted loop playsinline preload="none" poster="assets/gaming.png">
+                <source
+                  src="https://videos.pexels.com/video-files/3943969/3943969-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__index">04</div>
+            <div class="project-card__body">
+              <p>ENERGY / PRECISION CUTS</p>
+              <h3>GAMING<br />EDITS</h3>
+              <span>SYNC, SPEED, PAYOFF <b>↗</b></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="comparison section-shell" data-scene="COLOR & CRAFT">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker reveal-up">03 — COLOR & CRAFT</p>
+            <h2 class="section-title split-reveal">THE DIFFERENCE<br /><em>IS IN THE DETAILS.</em></h2>
+          </div>
+          <p class="section-aside reveal-up">DRAG THE FRAME<br />RAW TO FINAL GRADE</p>
+        </div>
+
+        <div class="compare-stage interactive-media" id="compare-stage" data-cursor="DRAG">
+          <div class="compare-layer compare-layer--raw">
+            <img src="assets/before-after.png" alt="Raw documentary landscape before grading" />
+          </div>
+          <div class="compare-layer compare-layer--after">
+            <img src="assets/before-after.png" alt="Documentary landscape after cinematic grading" />
+          </div>
+          <div class="compare-label compare-label--raw">RAW / LOG</div>
+          <div class="compare-label compare-label--after">FINAL GRADE</div>
+          <div class="compare-divider">
+            <span><i>‹</i><i>›</i></span>
+          </div>
+          <input
+            class="compare-range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Compare raw footage with final color grade"
+          />
+        </div>
+      </section>
+
+      <section class="numbers" data-scene="BY THE NUMBERS">
+        <div class="numbers__intro section-shell">
+          <p class="section-kicker reveal-up">04 — THE RECEIPTS</p>
+          <p class="numbers__line reveal-up">NOT VANITY METRICS. <span>PROOF OF REPETITION.</span></p>
+        </div>
+        <div class="numbers__grid section-shell">
+          <article class="stat">
+            <div><strong data-count="120" data-suffix="+">0</strong></div>
+            <p>PROJECTS<br />COMPLETED</p>
+          </article>
+          <article class="stat">
+            <div><strong data-count="18" data-suffix="M+">0</strong></div>
+            <p>WATCH TIME<br />GENERATED</p>
+          </article>
+          <article class="stat">
+            <div><strong data-count="3400" data-suffix="+">0</strong></div>
+            <p>HOURS<br />EDITED</p>
+          </article>
+          <article class="stat stat--small">
+            <div><strong data-count="24" data-suffix="/7">0</strong></div>
+            <p>OBSESSED WITH<br />THE NEXT FRAME</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process section-shell" id="process" data-scene="THE PROCESS">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker reveal-up">05 — THE WORKFLOW</p>
+            <h2 class="section-title split-reveal">FROM A BLANK<br /><em>TIMELINE TO IMPACT.</em></h2>
+          </div>
+          <p class="section-aside reveal-up">EVERY FRAME EARNS<br />ITS PLACE ON SCREEN</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__line"><i></i></div>
+          <article class="timeline__step">
+            <span class="timeline__no">01</span>
+            <h3>IDEA</h3>
+            <p>Find the point of view. Decide what the audience should feel before the first cut lands.</p>
+          </article>
+          <article class="timeline__step">
+            <span class="timeline__no">02</span>
+            <h3>SCRIPT</h3>
+            <p>Shape the hook, the build, and the payoff. Retention starts before the timeline opens.</p>
+          </article>
+          <article class="timeline__step">
+            <span class="timeline__no">03</span>
+            <h3>FOOTAGE</h3>
+            <p>Pull out the moments with weight. Organize the chaos into a story worth following.</p>
+          </article>
+          <article class="timeline__step">
+            <span class="timeline__no">04</span>
+            <h3>EDIT</h3>
+            <p>Cut with rhythm. Build momentum. Know exactly when to let a frame breathe.</p>
+          </article>
+          <article class="timeline__step">
+            <span class="timeline__no">05</span>
+            <h3>SOUND</h3>
+            <p>Design the world beneath the visuals. A good cut is seen. A great one is felt.</p>
+          </article>
+          <article class="timeline__step">
+            <span class="timeline__no">06</span>
+            <h3>DELIVERY</h3>
+            <p>Polished, platform-ready, and on time. Your video leaves the suite ready to perform.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" data-scene="CLIENT NOTES">
+        <div class="section-shell">
+          <p class="section-kicker reveal-up">06 — CLIENT NOTES</p>
+          <h2 class="section-title split-reveal">THE WORD<br /><em>AFTER THE CUT.</em></h2>
+        </div>
+        <div class="quote-marquee">
+          <div class="quote-track">
+            <article class="quote-card">
+              <p>“The difference was immediate. Tanishk found a story in footage I thought was unusable and made the whole channel feel premium.”</p>
+              <footer><strong>ARJUN MEHRA</strong><span>YOUTUBE CREATOR / 780K</span></footer>
+            </article>
+            <article class="quote-card quote-card--accent">
+              <p>“He understands retention without making the edit feel loud. The pacing feels invisible, which is exactly why it works.”</p>
+              <footer><strong>NISHA KAPOOR</strong><span>FOUNDER / NORTHLINE MEDIA</span></footer>
+            </article>
+            <article class="quote-card">
+              <p>“Our short-form clips finally started looking like the quality of the conversations. Clean, sharp, and always on time.”</p>
+              <footer><strong>ROHAN DAS</strong><span>HOST / SIGNAL PODCAST</span></footer>
+            </article>
+            <article class="quote-card">
+              <p>“The difference was immediate. Tanishk found a story in footage I thought was unusable and made the whole channel feel premium.”</p>
+              <footer><strong>ARJUN MEHRA</strong><span>YOUTUBE CREATOR / 780K</span></footer>
+            </article>
+            <article class="quote-card quote-card--accent">
+              <p>“He understands retention without making the edit feel loud. The pacing feels invisible, which is exactly why it works.”</p>
+              <footer><strong>NISHA KAPOOR</strong><span>FOUNDER / NORTHLINE MEDIA</span></footer>
+            </article>
+            <article class="quote-card">
+              <p>“Our short-form clips finally started looking like the quality of the conversations. Clean, sharp, and always on time.”</p>
+              <footer><strong>ROHAN DAS</strong><span>HOST / SIGNAL PODCAST</span></footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-shell" data-scene="ABOUT THE EDITOR">
+        <div class="about__visual reveal-frame">
+          <img src="assets/hero-studio.png" alt="Tanishk's post-production editing workspace" loading="lazy" />
+          <div class="about__stamp"><span>BASED IN</span><strong>INDIA</strong></div>
+        </div>
+        <div class="about__copy">
+          <p class="section-kicker reveal-up">07 — BEHIND THE TIMELINE</p>
+          <h2 class="section-title split-reveal">NOT JUST AN EDITOR.<br /><em>A STORYTELLER.</em></h2>
+          <p class="reveal-up">
+            I’m Tanishk, a freelance video editor obsessed with the invisible details:
+            the half-second that saves a scene, the sound cue that changes a feeling,
+            the opening frame that stops a scroll.
+          </p>
+          <p class="reveal-up">
+            From high-retention social cuts to slow-burn documentary stories, I make
+            videos that feel intentional, look expensive, and keep people watching.
+          </p>
+          <a href="#contact" class="text-link magnetic reveal-up">LET’S MAKE SOMETHING THAT STAYS <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" data-scene="FINAL FRAME">
+        <div class="contact__flare"></div>
+        <div class="contact__inner section-shell">
+          <p class="section-kicker reveal-up">08 — START A PROJECT</p>
+          <h2 class="contact__title split-reveal">YOUR NEXT<br /><em>VIRAL VIDEO</em><br />STARTS HERE.</h2>
+          <div class="contact__lower">
+            <div class="contact__details reveal-up">
+              <p>Got footage? Got an idea? Let’s turn it into something people remember.</p>
+              <a href="mailto:tanishk.editor@gmail.com">TANISHK.EDITOR@GMAIL.COM</a>
+              <div class="contact__socials">
+                <a href="https://instagram.com/tanishk.edits" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+                <a href="https://discord.com" target="_blank" rel="noreferrer">DISCORD / TANISHK.EDITS</a>
+              </div>
+            </div>
+            <form class="contact-form reveal-up">
+              <label>
+                <span>YOUR NAME</span>
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+              <label>
+                <span>YOUR EMAIL</span>
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+              <label>
+                <span>TELL ME ABOUT THE PROJECT</span>
+                <textarea name="message" rows="3" required></textarea>
+              </label>
+              <button class="form-submit magnetic" type="submit">SEND THE BRIEF <span>↗</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="contact__footer section-shell">
+          <span>© 2026 TANISHK / VIDEO EDITOR</span>
+          <span>PRESS <kbd>G</kbd> FOR DIRECTOR’S GRADE</span>
+          <a href="#top">BACK TO TOP ↑</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="easter-toast" role="status">
+      <span>DIRECTOR’S GRADE</span>
+      <strong>ACTIVATED</strong>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
